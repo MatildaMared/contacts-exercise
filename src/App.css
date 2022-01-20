@@ -1,7 +1,7 @@
 .contact-list {
   display: flex;
 }
-.contact-list > section {
+.contact-list > li {
   border: 1px solid gray;
   border-radius: 0.4em;
   padding: 0.5em 1em;
@@ -15,7 +15,7 @@
   margin: 0em;
   padding: 0.3em 0em;
 }
-.contact-list section .star {
+.contact-list li .star {
   position: absolute;
   right: 0em;
   top: 0em;
