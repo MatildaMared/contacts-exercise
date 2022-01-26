@@ -15,8 +15,8 @@ function ContactCard({ contact }: Props) {
             ))}
 
             <div className="star">
-                <div>⭐</div>
-                <div>🖊️</div>
+                {/* <div>⭐</div> */}
+                <div role="button">🖊️</div>
             </div>
         </li>
     );
