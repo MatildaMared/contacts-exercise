@@ -27,7 +27,7 @@ describe("ContactList component", () => {
     expect(phoneElement).toBeInTheDocument();
   });
 
-  it("renders the correct amount of contacts elements", () => {
+  it("renders the correct amount of contact elements", () => {
     render(<ContactList />);
 
     const items = screen.getAllByRole("listitem");
