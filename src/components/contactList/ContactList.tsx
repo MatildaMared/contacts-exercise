@@ -23,10 +23,22 @@ const data: Contact[] = [
 function ContactList() {
     const [contacts, setContacts] = useState<Contact[]>(data);
 
+    const changeContact = (newContact: Contact) => {
+        setContacts(
+            contacts.map((c) => {
+                return c.id === newContact.id ? newContact : c;
+            })
+        );
+    };
+
     return (
         <ul className="contact-list">
             {contacts.map((contact) => (
-                <ContactCard key={contact.id} contact={contact} />
+                <ContactCard
+                    changeContact={changeContact}
+                    key={contact.id}
+                    contact={contact}
+                />
             ))}
         </ul>
     );
